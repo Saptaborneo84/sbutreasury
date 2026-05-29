@@ -1,0 +1,14 @@
+.env
+.env.local
+cloudflared-linux-amd64.deb
+dist/
+dist.backup/
+wget-log
+.env
+.env.local
+cloudflared-linux-amd64.deb
+dist/
+dist.backup/
+wget-log
+node_modules/
+.next/
