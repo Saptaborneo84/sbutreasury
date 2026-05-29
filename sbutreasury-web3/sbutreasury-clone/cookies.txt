@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+chess-rename-06654503.figma.site	TRUE	/	FALSE	1999999999	__cf_bm	TmlLv9hXS64Y1dpnoRmk3fojKv2_z4lNkWoQlC0eHrc-1779556359.917543-1.0.1.1-p25MXXYZKZ1VeApJhJjqIsVjMJqcSW9cQSGlzYK6Zkvwz6QF5VMAyX0gzTVCDIbfVWG5PlIrTJRae_J31_NCZ3V3K15kPTESzEvSC0oIiamV4CdJzPp35X4NeYieVU1R
+figma.site	TRUE	/	FALSE	1999999999	SameSite	None
+

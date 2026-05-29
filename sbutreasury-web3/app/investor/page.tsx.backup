@@ -1,0 +1,111 @@
+"use client";
+
+import Link from "next/link";
+import { useAccount } from "wagmi";
+import ProtectedRoute from "../components/ProtectedRoute";
+
+const TOKEN_ADDRESS = "0xc1a35CE5e68fed4F068cb39bEC10eE4B5E649912";
+
+export default function InvestorPage() {
+  const { address } = useAccount();
+
+  const shortAddress = address
+    ? `${address.slice(0, 6)}...${address.slice(-4)}`
+    : "Wallet Connected";
+
+  return (
+    <ProtectedRoute>
+      <section className="min-h-screen px-5 py-10 text-white sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-7xl">
+
+          <div className="rounded-[2rem] border border-emerald-400/30 bg-[#07142b] p-6 shadow-[0_0_45px_rgba(16,185,129,0.18)] sm:p-10">
+
+            <h1 className="text-4xl font-black text-emerald-400 sm:text-6xl">
+              Investor Portal
+            </h1>
+
+            <p className="mt-4 text-lg text-slate-300 sm:text-2xl">
+              Wallet authenticated and approved for investor access.
+            </p>
+
+            <div className="mt-8 rounded-3xl border border-emerald-400/30 bg-black/40 p-6">
+              <h2 className="text-3xl font-black text-emerald-400">
+                ✅ KYC / AML VERIFIED
+              </h2>
+
+              <p className="mt-4 break-all text-emerald-300">
+                Connected Wallet: {shortAddress}
+              </p>
+            </div>
+
+            <div className="mt-8 rounded-3xl border border-emerald-400/30 bg-black/40 p-8">
+              <h2 className="text-3xl font-black text-white">
+                Monitoring Contract Address
+              </h2>
+
+              <p className="mt-4 break-all text-xl font-black text-emerald-400">
+                {TOKEN_ADDRESS}
+              </p>
+
+              <a
+                href={`https://etherscan.io/token/${TOKEN_ADDRESS}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex rounded-2xl bg-emerald-400 px-8 py-4 text-lg font-black text-black"
+              >
+                Verify Token on Ethereum ↗
+              </a>
+            </div>
+
+            <div className="mt-8 rounded-3xl border border-emerald-400/30 bg-black/40 p-8">
+              <h2 className="text-3xl font-black text-emerald-400">
+                Investor Invitation
+              </h2>
+
+              <p className="mt-4 text-slate-300">
+                Verified investors may purchase SBU Treasury tokens.
+                After successful token purchase, an invitation to the
+                Official PT Sapta Borneo Utama Investor WeChat Group
+                will be provided automatically.
+              </p>
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-5">
+
+              <Link
+                href="/documents"
+                className="rounded-2xl bg-emerald-400 px-8 py-4 text-xl font-black text-black"
+              >
+                View Documents
+              </Link>
+
+              <Link
+                href="/buy-token"
+                className="rounded-2xl bg-emerald-400 px-8 py-4 text-xl font-black text-black"
+              >
+                Buy Token
+              </Link>
+
+              <Link
+                href="/payout"
+                className="rounded-2xl bg-emerald-400 px-8 py-4 text-xl font-black text-black"
+              >
+                Payout Center
+              </Link>
+
+              <Link
+                href="/wechat"
+                className="rounded-2xl bg-emerald-400 px-8 py-4 text-xl font-black text-black"
+              >
+                Investor WeChat Group
+              </Link>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </ProtectedRoute>
+  );
+}

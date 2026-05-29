@@ -1,0 +1,11 @@
+HTTrack3.49-2 launched on Sun, 24 May 2026 00:12:39 at https://chess-rename-06654503.figma.site/ +*.figma.site/* +*.js +*.css +*.json +*.png +*.svg
+(httrack https://chess-rename-06654503.figma.site/ -O ./sbutreasury-clone +*.figma.site/* +*.js +*.css +*.json +*.png +*.svg )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 seconds : 6 links scanned, 5 files written (2968731 bytes overall) [747379 bytes received at 124563 bytes/sec], 2968731 bytes transferred using HTTP compression in 5 files, ratio 25%, 3.0 requests per connection
+(No errors, 0 warnings, 0 messages)

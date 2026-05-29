@@ -1,0 +1,35 @@
+import Hero from "./components/Hero";
+import Metrics from "./components/Metrics";
+import InstitutionalStats from "./components/InstitutionalStats";
+import Infrastructure from "./components/Infrastructure";
+import ContractVerification from "./components/ContractVerification";
+import InvestorAccess from "./components/InvestorAccess";
+import ESG from "./components/ESG";
+import Roadmap from "./components/Roadmap";
+import FinalCTA from "./components/FinalCTA";
+
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-black p-8 text-white">
+      <div className="mx-auto max-w-7xl">
+        <Hero />
+<div className="mb-10">
+  <a
+    href="/treasury-live"
+    className="inline-block rounded-xl bg-emerald-400 px-6 py-3 font-bold text-black"
+  >
+    View Live Settlement
+  </a>
+</div>
+        <Metrics />
+        <InstitutionalStats />
+        <Infrastructure />
+        <ContractVerification />
+        <InvestorAccess />
+        <ESG />
+        <Roadmap />
+        <FinalCTA />
+      </div>
+    </main>
+  );
+}

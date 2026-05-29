@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, #10235c 0%, #07142b 35%, #020817 65%, #000000 100%);
+  color: white;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 999px;
+}
+
+/* links */
+a {
+  text-decoration: none;
+}
+
+/* reusable dark card */
+.dark-card {
+  border-radius: 28px;
+  border: 1px solid rgba(59,130,246,0.18);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20,35,80,0.96),
+      rgba(8,18,40,0.96)
+    );
+  box-shadow:
+    0 0 40px rgba(30,64,175,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+/* blue institutional button */
+.btn-blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: linear-gradient(180deg,#2563eb,#1d4ed8);
+  color: white;
+  font-weight: 900;
+  transition: 0.2s ease;
+  box-shadow:
+    0 0 25px rgba(37,99,235,0.45);
+}
+
+.btn-blue:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg,#3b82f6,#2563eb);
+}
+
+/* emerald institutional button */
+.btn-green {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: linear-gradient(180deg,#34d399,#10b981);
+  color: #04111d;
+  font-weight: 900;
+  transition: 0.2s ease;
+  box-shadow:
+    0 0 30px rgba(16,185,129,0.45);
+}
+
+.btn-green:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg,#6ee7b7,#34d399);
+}
+
+/* navbar */
+.nav-shell {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(18px);
+  background: rgba(2,8,23,0.86);
+  border-bottom: 1px solid rgba(59,130,246,0.15);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(2.2rem,10vw,5rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem,7vw,3rem) !important;
+  }
+
+  p {
+    font-size: clamp(1rem,4vw,1.15rem);
+  }
+
+  .mobile-stack {
+    flex-direction: column !important;
+  }
+
+  .mobile-full {
+    width: 100% !important;
+  }
+}

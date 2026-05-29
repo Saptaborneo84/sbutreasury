@@ -1,0 +1,16 @@
+● pm2-root.service - PM2 process manager
+   Loaded: loaded (/etc/systemd/system/pm2-root.service; enabled; vendor preset: enabled)
+   Active: inactive (dead) since Tue 2026-05-26 09:21:28 WIB; 4h 56min ago
+     Docs: https://pm2.keymetrics.io/
+ Main PID: 592 (code=exited, status=0/SUCCESS)
+
+May 26 03:17:09 debian pm2[555]: │ 0  │ sbutreasury         │ default     │ 1.0.0   │ fork    │ 604      │ 0s     │ 0    │ online    │ 0%       │ 4.3mb    │ root     │ disabled │
+May 26 03:17:09 debian pm2[555]: │ 1  │ sbutreasury-web3    │ default     │ N/A     │ fork    │ 605      │ 0s     │ 0    │ online    │ 0%       │ 26.8mb   │ root     │ disabled │
+May 26 03:17:09 debian pm2[555]: └────┴─────────────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+May 26 03:17:09 debian systemd[1]: Started PM2 process manager.
+May 26 09:21:28 debian pm2[16791]: [PM2] Spawning PM2 daemon with pm2_home=/root/.pm2
+May 26 09:21:28 debian pm2[16791]: [PM2] PM2 Successfully daemonized
+May 26 09:21:28 debian pm2[16791]: [PM2][WARN] No process found
+May 26 09:21:28 debian pm2[16791]: [PM2] [v] All Applications Stopped
+May 26 09:21:28 debian pm2[16791]: [PM2] [v] PM2 Daemon Stopped
+May 26 09:21:28 debian systemd[1]: pm2-root.service: Succeeded.

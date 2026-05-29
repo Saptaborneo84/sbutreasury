@@ -1,0 +1,38 @@
+[0;1;32m●[0m fail2ban.service - Fail2Ban Service
+   Loaded: loaded (/lib/systemd/system/fail2ban.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Tue 2026-05-26 03:17:07 WIB; 11h ago
+     Docs: man:fail2ban(1)
+ Main PID: 562 (fail2ban-server)
+    Tasks: 3 (limit: 4701)
+   Memory: 22.3M
+   CGroup: /system.slice/fail2ban.service
+           └─562 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
+
+May 26 03:17:07 debian systemd[1]: Starting Fail2Ban Service...
+May 26 03:17:07 debian systemd[1]: Started Fail2Ban Service.
+May 26 03:17:08 debian fail2ban-server[562]: Server ready
+May 26 06:25:50 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 08:52:02 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 13:50:35 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 14:09:26 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 14:13:24 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 14:17:28 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+[0;1;32m●[0m fail2ban.service - Fail2Ban Service
+   Loaded: loaded (/lib/systemd/system/fail2ban.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Tue 2026-05-26 03:17:07 WIB; 11h ago
+     Docs: man:fail2ban(1)
+ Main PID: 562 (fail2ban-server)
+    Tasks: 3 (limit: 4701)
+   Memory: 22.3M
+   CGroup: /system.slice/fail2ban.service
+           └─562 /usr/bin/python3 /usr/bin/fail2ban-server -xf start
+
+May 26 03:17:07 debian systemd[1]: Starting Fail2Ban Service...
+May 26 03:17:07 debian systemd[1]: Started Fail2Ban Service.
+May 26 03:17:08 debian fail2ban-server[562]: Server ready
+May 26 06:25:50 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 08:52:02 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 13:50:35 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 14:09:26 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 14:13:24 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
+May 26 14:17:28 debian systemd[1]: [0;1;39m[0;1;31m[0;1;39m/lib/systemd/system/fail2ban.service:12: PIDFile= references path below legacy directory /var/run/, updating /var/run/fail2ban/fail2ban.pid → /run/fail2ban/fail2ban.pid; please update the unit file accordingly.[0m
